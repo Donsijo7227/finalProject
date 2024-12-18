@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automoblox - Creative Wooden Cars</title>
+    <!--Link to stylesheet-->
+    <link href="styles.css" rel="stylesheet"/>
+    <!--bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+            <nav class="navbar navbar-expand-lg bg-body-secondary ">
+                <div class="container-fluid ">
+                    <a class="navbar-brand" href="#"><img src="img/automoblox_logo.jpg" alt="logo" class="logo"></a>
+                    <div class="collapse navbar-collapse navlist"  id="navbarNav">
+                            <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#home" onclick="showPage('home')">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#c9" onclick="showPage('c9')">C9 Sportscar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#s9" onclick="showPage('s9')">S9 Sedan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#t9" onclick="showPage('t9')">T9 Pickup</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#m9" onclick="showPage('m9')">M9 SUV</a>
+                            </li>
+                            </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <section class="hero">
+            <div class="container">
+                <h1>Automoblox</h1>
+                <p>Creative Wooden Cars for Imaginative Minds</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="car-grid">
+                <article class="car-card" onclick="showPage('c9')">
+                    <img src="img/c9_large.jpg" alt="C9 Sportscar" class="car-image">
+                    <div class="car-content">
+                        <h2>C9 Sportscar</h2>
+                        <p>Experience the thrill of speed with our signature sports car design.</p>
+                    </div>
+                </article>
+
+                <article class="car-card" onclick="showPage('s9')">
+                    <img src="img/s9_large.jpg" alt="S9 Sedan" class="car-image">
+                    <div class="car-content">
+                        <h2>S9 Sedan</h2>
+                        <p>Elegance meets functionality in our classic sedan model.</p>
+                    </div>
+                </article>
+
+                <article class="car-card" onclick="showPage('t9')">
+                    <img src="img/t9_large.jpg" alt="T9 Pickup" class="car-image">
+                    <div class="car-content">
+                        <h2>T9 Pickup</h2>
+                        <p>Rugged versatility for your imaginative adventures.</p>
+                    </div>
+                </article>
+
+                <article class="car-card" onclick="showPage('m9')">
+                    <img src="img/m9_large.jpg" alt="M9 SUV" class="car-image">
+                    <div class="car-content">
+                        <h2>M9 SUV</h2>
+                        <p>The perfect blend of style and practicality.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+   
+ 
+
+    <!-- C9 Sportscar Page -->
+    <div id="c9" class="page">
+        <div class="container">
+            <div class="car-details">
+                <h1>C9 Sportscar</h1>
+                <img src="img/c9_large.jpg" alt="C9 Sportscar" class="ind-car-image">
+                <p>The C9 Sportscar combines sleek design with premium craftsmanship. Each piece is carefully crafted from sustainable hardwood and finished to perfection.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- S9 Sedan Page -->
+    <div id="s9" class="page">
+        <div class="container">
+            <div class="car-details">
+                <h1>S9 Sedan</h1>
+                <img src="img/s9_large.jpg" alt="S9 Sedan" class="ind-car-image">
+                <p>The S9 Sedan represents the perfect balance of style and function. Its classic design appeals to collectors of all ages.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- T9 Pickup Page -->
+    <div id="t9" class="page">
+        <div class="container">
+            <div class="car-details">
+                <h1>T9 Pickup</h1>
+                <img src="img/t9_large.jpg" alt="T9 Pickup" class="ind-car-image">
+                <p>The T9 Pickup brings rugged capability to the Automoblox lineup. Features include a working cargo bed and authentic truck styling.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- M9 SUV Page -->
+    <div id="m9" class="page">
+        <div class="container">
+            <div class="car-details">
+                <h1>M9 SUV</h1>
+                <img src="img/m9_large.jpg" alt="M9 SUV" class="ind-car-image">
+                <p>The M9 SUV offers versatility and style in one package. Its larger size makes it perfect for creative play.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Automoblox®. All rights reserved.</p>
+        </div>
+    </footer>
+     
+     <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Added to cart</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+                page.style.display = 'none';
+            });
+            
+            // Show selected page
+            const selectedPage = document.getElementById(pageId);
+            if (selectedPage) {
+                selectedPage.classList.add('active');
+            }
+            
+            // Update URL hash
+            window.location.hash = pageId;
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Handle initial page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const pageId = window.location.hash.slice(1) || 'home';
+            showPage(pageId);
+        });
+
+        // Handle browser back/forward buttons
+        window.addEventListener('hashchange', () => {
+            const pageId = window.location.hash.slice(1) || 'home';
+            showPage(pageId);
+        });
+    </script>
+</body>
+</html>
